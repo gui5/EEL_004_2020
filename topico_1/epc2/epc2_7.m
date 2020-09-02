@@ -7,16 +7,15 @@ N = 200;
 n = 0:N-1;
 
 % a) 
-  x = 3 * cos(2*pi*7000*n*Ts - (2*pi*n + pi/4)) + 2*cos(2*pi*4000*n*Ts - 2*pi*n) + cos(2*pi*3000*n*Ts + 2*pi*n - pi/7);
-
+  x = 3 * cos(2*pi*7000*n*Ts -  pi/4) + 2*cos(2*pi*4000*n*Ts) + cos(2*pi*3000*n*Ts - pi/7);
  %b)
 figure(1);
 plot(x);
  
  
 %c)
-% Sobreposicoes espectrais: 7000Hz, 4000Hz, 3000Hz
-% No sinal amostrado veriamos as frequencias de 2000hz  3000h e 4000hz
+% Sobreposicoes espectrais: 4000Hz, 3000Hz
+% No sinal amostrado veriamos as frequencias de 2000hz  3000h e 4000hz, a frequencia de 12khz eh perdida
 
 %d)
 figure(2);
