@@ -1,0 +1,12 @@
+1)
+	Continuos
+	Não possuem distancia minima entre as medidas
+	São medidos continuamente
+
+	Discretos
+	Possuem um idice para cada medida
+	As medidas possuem uma distancia regular
+
+
+
+	

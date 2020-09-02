@@ -1,0 +1,8 @@
+Tem-se 4 canais com 4 bytes cada (32 bits), considerando 1KB = 1024 bytes
+para um tamanho maximo de 2.5 MB em 60 segundos:
+
+	Fs = (2.5 * 1024 *1024)/(4 * 4 * 60)
+	Fs = 2730.7 Hz
+
+A frequência mais proxima que atende o requisito do tamanho do arquivo gravado
+é 2000Hz.
