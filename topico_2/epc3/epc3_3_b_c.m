@@ -31,4 +31,4 @@ L3 = [Dm(1,1:TimeDm),F(1,1:TimeF)];
 %sound
 M = [L1,L2,L3,L1,L2,L3];
 soundsc(M,Fs,24);
-
+audiowrite("./sound.WAV",M,Fs);
