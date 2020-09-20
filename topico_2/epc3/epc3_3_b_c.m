@@ -1,10 +1,9 @@
 clc;
 clear;
 
-  
 Fs =44100;
 Ts = 1/Fs;
-n = 0:((Fs * 3)/2)-1; % 1,5s 
+n = 0:((Fs*3))-1;
 
 %Notas
 fC  = 264.0;
@@ -22,14 +21,14 @@ Dm = 2*cos(2*pi*fD*n*Ts) + cos(2*pi*fF*n*Ts)   + cos(2*pi*fA*n*Ts);
 F  = 3*cos(2*pi*fF*n*Ts) + 2*cos(2*pi*fC*n*Ts) + cos(2*pi*fA*n*Ts);
 
 %musica
-L1 = [C,C];
-L2 = [G,G];
-L3 = [Dm,F];
-L4 = L1;
-L5 = L2;
-L6 = L3;
+TimeDm = length(n)*0.93;
+TimeF = length(n)*0.07;
+
+L1 = C;
+L2 = G;
+L3 = [Dm(1,1:TimeDm),F(1,1:TimeF)];
 
 %sound
-M = [L1,L2,L3,L4,L5,L6];
+M = [L1,L2,L3,L1,L2,L3];
 soundsc(M,Fs,24);
 
