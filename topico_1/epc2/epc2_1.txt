@@ -1,7 +1,6 @@
 1)
 	Continuos
-	NÃ£o possuem distancia minima entre as medidas
-	SÃ£o medidos continuamente
+	São sinais que possuem resolução infinita tanto em amplitude, quanto no tempo
 
 	Discretos
 	Possuem um idice para cada medida
