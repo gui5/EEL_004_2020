@@ -5,7 +5,7 @@ clear;
 % amostragem de 1000hz é suficiente
 
 Fs = 1000;
-n = 0:((Fs*3))-1;
+n = 0:((Fs*1.5))-1;
 
 M = getMusic(Fs,n);
 
