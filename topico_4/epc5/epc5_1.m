@@ -13,13 +13,20 @@ L1_ = decompressSignal(L1_N,fs,L1_Compressed);
 L2_ = decompressSignal(L2_N,fs,L2_Compressed);
 L3_ = decompressSignal(L3_N,fs,L3_Compressed);
 
-%reconstruindo a FFT dos sinais
-%L1_FFT = rebuildFFT(L1_N,L1_FS,L1_Compressed);
-%L2_FFT = rebuildFFT(L2_N,L2_FS,L2_Compressed);
-%L3_FFT = rebuildFFT(L3_N,L3_FS,L3_Compressed);
+subplot(3,1,1);
+plot(L1_);
+xlabel('samples');
+ylabel('Amplitude');
+title('Linha 1 descomprimida');
+subplot(3,1,2);
+plot(L2_);
+xlabel('samples');
+ylabel('Amplitude');
+title('Linha 2 descomprimida');
+subplot(3,1,3);
+plot(L3_);
+xlabel('samples');
+ylabel('Amplitude');
+title('Linha 3 descomprimida');
 
-%reconstruindo o sinal aplicando a ifft
-%L1_S = %abs(ifft(L1_FFT));
-%L2_S = %abs(ifft(L2_FFT));
-%L3_S = %abs(ifft(L3_FFT));
 
