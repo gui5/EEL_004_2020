@@ -13,9 +13,22 @@ L1_ = decompressSignal(L1_N,fs,L1_Compressed);
 L2_ = decompressSignal(L2_N,fs,L2_Compressed);
 L3_ = decompressSignal(L3_N,fs,L3_Compressed);
 
+
+%comparação numérica entre os sinais
+
+L1_E = computeError(L1,L1_);
+L2_E = computeError(L2,L2_);
+L3_E = computeError(L3,L3_);
+
+msg = sprintf("Line 1 Error: %f \nLine 2 Error: %f\nLine 3 Error: %f ",L1_E,L2_E,L3_E);
+
+msgbox(msg,"Comparacao Numerica");
+
+%comparação gráfica entre os sinais
+
 %linha 1
 
-figure(1)
+figure(1);
 plot(L1);
 xlabel('samples');
 ylabel('Amplitude');
