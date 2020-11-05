@@ -16,7 +16,7 @@ function [X,table] = dft(x)
       
       v = (x(n+1) * (cos(2*pi*n*m/Xsize)- 1i*sin(2*pi*n*m/Xsize)));
       
-      table(m+1,n+1) = v;
+      table(n+1,m+1) = v;
       
     end 
     
