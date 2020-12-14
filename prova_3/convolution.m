@@ -16,5 +16,5 @@ H=[h,zeros(1,n)]
             end
         end
     end
-
+    
 endfunction

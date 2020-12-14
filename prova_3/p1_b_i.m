@@ -28,8 +28,7 @@ plot(n,x_d,'b',n,x_noise,'r');
 legend('Sinal', 'Sinal com ruido');
 
 taps = 37; % qtd de coeficientes do filtro idade =28 mes nascimento = 7 
-imp = zeros(1,MAXLEN); %inpulso unitario
-imp(10) = 1;
+imp = unit_impulse(MAXLEN);
 
 fc = 12.5; % empiricamente. Ja tive contado com sistemas de aquisicao embarcados
            % que a frequencia de corte do filtro consistia em 1/4 da frequencia de amostragem do sinal
