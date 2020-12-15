@@ -1,0 +1,11 @@
+1 a -  Utilizaria 12.5 Hz. Ja tive contato com sistemas de aquisição embarcados em que a regra do filtro passa baixar era
+  1/4 da frequência de amostragem.
+
+1 c - primeiro faz-se o zeropadding para deixar os vetores do mesmo tamanho
+      o tamanho do vetor resultado da convolução é tamanho do kernel + tamanho do vetor de dados  menos 1
+      entao num loop de 1 ao tamanho do vetor de dados, computa-se um elemento do vetor de saida.
+	Y(i)=Y(i)+X(j)*H(i-j+1);
+
+	https://en.wikipedia.org/wiki/Convolution
+
+2 b - 8 coeficientes/ordem  apartir de 9 já observa-se overshooting na resposta do impulso unitário.
