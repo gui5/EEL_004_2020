@@ -27,7 +27,7 @@ figure(idx_fig);
 plot(n,x_d,'b',n,x_noise,'r');
 legend('Sinal', 'Sinal com ruido');
 
-taps = 37; % qtd de coeficientes do filtro idade =28 mes nascimento = 7 
+taps = 28+7; % qtd de coeficientes do filtro idade =28 mes nascimento = 7 
 imp = unit_impulse(MAXLEN);
 
 fc = 12.5; % empiricamente. Ja tive contado com sistemas de aquisicao embarcados
